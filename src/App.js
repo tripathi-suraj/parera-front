@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Headers from './common/Header';
 import About from './components/About';
 import Home from './components/Home';
+import Shop from './components/Shop';
 
 import './style.css';
 
@@ -13,6 +14,9 @@ export default function App() {
       <Router>
         <Headers />
         <Switch>
+          <Route path="/shop">
+            <Shop />
+          </Route>
           <Route path="/about">
             <About />
           </Route>
